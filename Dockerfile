@@ -9,4 +9,4 @@ RUN npm run build
 
 EXPOSE 8545
 
-ENTRYPOINT ["node", "./build/cli.node.js"]
+CMD ["node", "./build/cli.node.js"]

@@ -108,7 +108,7 @@ if (argv.mem === true) {
 }
 
 var options = {
-  port: argv.p || argv.port || "8545",
+  port: argv.p || argv.port || process.env.PORT || "8545",
   hostname: argv.h || argv.hostname,
   debug: argv.debug,
   seed: argv.s || argv.seed,
